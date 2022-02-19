@@ -1,0 +1,17 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  rabbitmq:
+    host: "localhost"
+    port: "5672"
+    username: "admin"
+    password: "123456"
+  activeMq:
+    broker-url: "localhost:61616"
+    user: "admin"
+    password: "admin"
+    queue-name: "emlakburada.queue"
+rabbitmq:
+  exchange: "emlakburada.exchange"
+  queue: "emlakburada.queue"
+  routingkey: "emlakburada.routingkey"
